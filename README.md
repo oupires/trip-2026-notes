@@ -2,7 +2,7 @@
 
 2026 年 9 月 25 日 – 10 月 4 日，巴厘岛 9 天 7 晚双人行程的随身页面。
 
-**在线访问：** https://oupires.github.io/bali-travel-handbook/
+**在线访问：** https://oupires.github.io/trip-2026-notes/
 
 ---
 
