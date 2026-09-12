@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex,nofollow,noarchive">
+<title>Yoga Barn 中文课表 · 实时</title>
+<style>
+  :root{
+    --bg:#f7f5f0; --card:#fff; --ink:#2b2b2b; --muted:#8a8378;
+    --green:#2e8b6b; --green-bg:#eef7f3; --amber:#b8860b; --amber-bg:#fdf6e3;
+    --red:#c0392b; --red-bg:#fdecea; --line:#e7e3da; --blue:#2f6fb0;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0;background:var(--bg);color:var(--ink);
+    font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;line-height:1.6;
+    -webkit-text-size-adjust:100%;}
+  .wrap{max-width:820px;margin:0 auto;padding:18px 14px 70px;}
+  header{background:linear-gradient(135deg,#2e8b6b,#3aa17e);color:#fff;border-radius:16px;
+    padding:20px;margin-bottom:16px;}
+  header h1{margin:0 0 6px;font-size:21px;letter-spacing:.5px;}
+  header p{margin:0;font-size:13px;opacity:.94;}
+  .back{display:inline-block;margin-bottom:12px;font-size:13px;color:var(--blue);text-decoration:none;}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:14px;
+    padding:16px;margin-bottom:14px;box-shadow:0 1px 3px rgba(0,0,0,.04);}
+  .card h2{margin:0 0 12px;font-size:16.5px;color:var(--green);}
+  .card h3{margin:14px 0 8px;font-size:14.5px;}
+  table{width:100%;border-collapse:collapse;font-size:13.5px;}
+  th,td{border:1px solid var(--line);padding:8px 9px;text-align:left;vertical-align:top;}
+  th{background:#f3f1ea;font-weight:600;}
+  .rec{background:var(--green-bg);color:var(--green);font-weight:700;}
+  .cau{background:var(--amber-bg);color:var(--amber);font-weight:700;}
+  .avoid{background:var(--red-bg);color:var(--red);font-weight:700;}
+  ul{margin:8px 0;padding-left:20px;}
+  li{margin:6px 0;font-size:14px;}
+  .kv{display:flex;gap:10px;flex-wrap:wrap;margin:-4px 0 4px;}
+  .kv div{background:#f3f1ea;border-radius:9px;padding:8px 11px;font-size:13px;flex:1 1 45%;}
+  .kv b{color:var(--green);}
+  .iframe-box{border:1px solid var(--line);border-radius:12px;overflow:hidden;background:#fff;}
+  iframe{width:100%;border:0;display:block;min-height:1100px;}
+  .note{font-size:12.5px;color:var(--muted);margin-top:10px;}
+  .tip{background:var(--green-bg);border-left:3px solid var(--green);border-radius:0 8px 8px 0;
+    padding:10px 12px;font-size:13.5px;margin:10px 0;}
+  .warn{background:var(--amber-bg);border-left:3px solid var(--amber);border-radius:0 8px 8px 0;
+    padding:10px 12px;font-size:13.5px;margin:10px 0;}
+  .btn{display:inline-block;background:var(--green);color:#fff;text-decoration:none;
+    padding:10px 16px;border-radius:10px;font-size:14px;font-weight:600;}
+  .btn.alt{background:#fff;color:var(--green);border:1px solid var(--green);}
+  footer{font-size:12px;color:var(--muted);text-align:center;margin-top:22px;line-height:1.8;}
+  a{color:var(--blue);}
+  @media(max-width:520px){ .kv div{flex:1 1 100%;} iframe{min-height:1300px;} }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<a class="back" href="index.html">← 返回行程小助手</a>
+
+<header>
+  <h1>🧘 Yoga Barn 中文课表</h1>
+  <p>乌布 · 实时课表自动显示<b>当天</b>安排 · 下方附中英对照与选课建议</p>
+</header>
+
+<!-- 实时课表 -->
+<div class="card">
+  <h2>📋 今日实时课表（官方数据）</h2>
+  <div class="tip">
+    下面是 Yoga Barn 官方课表系统（Mindbody）的实时数据，<b>打开即显示当天安排</b>——
+    9/26 当天打开这里，看到的就是 9/26 的课表。
+  </div>
+  <div class="iframe-box">
+    <iframe id="ybFrame" src="https://widgets.mindbodyonline.com/iframe/schedules/762224627fc4"
+      title="Yoga Barn 官方实时课表" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+  <p class="note">
+    若上方区域空白或加载不出，说明网络受限，请直接
+    <a href="https://theyogabarn.com/classes/daily-classes/" target="_blank" rel="noopener">打开官网原版课表 ↗</a>
+  </p>
+</div>
+
+<!-- 中文速览 -->
+<div class="card">
+  <h2>💡 中文速览（去之前先看这个）</h2>
+  <div class="kv">
+    <div>单次 drop-in：<b>IDR 180K</b>（≈¥80）</div>
+    <div>印尼本地/学生：<b>IDR 100K</b></div>
+    <div>3 次卡：<b>IDR 495K</b></div>
+    <div>5 次卡：<b>IDR 780K</b></div>
+  </div>
+  <ul>
+    <li><b>营业时间</b>：周日–周五 <b>06:30–21:00</b>；周六 <b>06:30–22:30</b>（9/26 是周六）</li>
+    <li><b>地址</b>：Jl. Raya Pengosekan, Ubud（距乌布中心约 5 分钟车程）</li>
+    <li><b>交通</b>：从 Alila Ubud 打车约 <b>20 分钟</b></li>
+    <li><b>购票</b>：日常课 <b>walk-in 现场前台登记</b>，不能提前在线订座；白天课提前 <b>30 分钟</b>、晚间课提前 <b>1 小时</b>开放登记，先到先得</li>
+    <li><b>装备</b>：垫子和辅具免费提供；毛巾租用 shower towel IDR 40K、mat towel IDR 30K</li>
+    <li><b>特殊课</b>（SPECIAL CLASS，如 Breath of Bliss）需在 Megatix 提前购票</li>
+  </ul>
+</div>
+
+<!-- 中英对照 -->
+<div class="card">
+  <h2>🔤 课表常见词 · 中英对照</h2>
+
+  <h3>课程类型</h3>
+  <table>
+    <tr><th style="width:44%;">英文</th><th>中文</th></tr>
+    <tr><td>Sound Bath Meditation</td><td>声音浴冥想（颂钵/铜锣，全程躺卧）</td></tr>
+    <tr><td>Sound Healing</td><td>声音疗愈</td></tr>
+    <tr><td>Healing Yoga Nidra</td><td>疗愈瑜伽睡眠（深度放松，全程躺卧）</td></tr>
+    <tr><td>Yoga Nidra</td><td>瑜伽睡眠</td></tr>
+    <tr><td>Kundalini, Gong Bath &amp; Meditation</td><td>昆达里尼瑜伽 + 锣浴 + 冥想</td></tr>
+    <tr><td>Kundalini</td><td>昆达里尼瑜伽（含唱诵、呼吸、动作）</td></tr>
+    <tr><td>Gong Bath</td><td>锣浴</td></tr>
+    <tr><td>Vinyasa</td><td>流瑜伽</td></tr>
+    <tr><td>Hatha</td><td>哈他瑜伽</td></tr>
+    <tr><td>Power</td><td>力量瑜伽</td></tr>
+    <tr><td>Yin</td><td>阴瑜伽</td></tr>
+    <tr><td>Restorative</td><td>修复瑜伽</td></tr>
+    <tr><td>AcroYoga</td><td>双人瑜伽 / 飞行瑜伽</td></tr>
+    <tr><td>Fly High Yoga</td><td>空中瑜伽</td></tr>
+    <tr><td>Beginner's Yoga</td><td>初学者瑜伽</td></tr>
+    <tr><td>Pilates / PiYo™</td><td>普拉提 / 普拉提+瑜伽融合</td></tr>
+    <tr><td>Capoeira</td><td>巴西战舞</td></tr>
+    <tr><td>Qi Gong</td><td>气功</td></tr>
+    <tr><td>Ecstatic Dance</td><td>狂喜舞蹈（自由即兴舞动）</td></tr>
+    <tr><td>Kirtan</td><td>梵唱 / 基尔坦（集体唱诵）</td></tr>
+    <tr><td>Vocal Activation</td><td>声音激活（发声与唱诵练习）</td></tr>
+    <tr><td>Breathwork / Breath of Bliss</td><td>呼吸法 / 极乐之息（特殊课，强度高）</td></tr>
+    <tr><td>Active Consciousness Meditation</td><td>主动意识冥想</td></tr>
+    <tr><td>Group Healing Meditation</td><td>团体疗愈冥想</td></tr>
+    <tr><td>Nervous System Rewire</td><td>神经系统重塑</td></tr>
+    <tr><td>Quantum Flow</td><td>量子流</td></tr>
+    <tr><td>Himalayan Kriya Yoga</td><td>喜马拉雅克里亚瑜伽</td></tr>
+    <tr><td>Flow State Watsu</td><td>水中疗愈（Watsu 水疗）</td></tr>
+  </table>
+
+  <h3>界面词汇</h3>
+  <table>
+    <tr><th style="width:44%;">英文</th><th>中文</th></tr>
+    <tr><td>Schedule for …</td><td>课程表（日期）</td></tr>
+    <tr><td>All Classes / Class Types</td><td>全部课程 / 全部课程类型</td></tr>
+    <tr><td>All Instructors</td><td>全部老师</td></tr>
+    <tr><td>All Rooms</td><td>全部教室</td></tr>
+    <tr><td>All Class Levels</td><td>全部难度等级</td></tr>
+    <tr><td>Sign Up / Book</td><td>报名 / 预约</td></tr>
+    <tr><td>Waitlist / Join Waitlist</td><td>候补名单 / 加入候补</td></tr>
+    <tr><td>Full</td><td>已满</td></tr>
+    <tr><td>Cancelled</td><td>已取消</td></tr>
+    <tr><td>Previous / Today / Next</td><td>上一周 / 今天 / 下一周</td></tr>
+    <tr><td>Morning / Afternoon / Evening</td><td>上午 / 下午 / 晚上</td></tr>
+    <tr><td>Monday … Sunday</td><td>周一 … 周日</td></tr>
+    <tr><td>Level 1 / 2 / All Levels</td><td>初级 / 中级 / 所有水平</td></tr>
+  </table>
+
+  <p class="note">
+    课表里的<b>老师姓名</b>保持英文（人名不翻译）；课程名如未在上表出现，
+    多半是「瑜伽体式 + 冥想/呼吸」的组合词，按关键词对照即可。
+  </p>
+</div>
+
+<!-- 选课建议 -->
+<div class="card">
+  <h2>🎯 9/26（周六）下午选课建议</h2>
+  <div class="warn">
+    以下为<b>周六课表的参考规律</b>（Yoga Barn 课表每周循环）。<b>实际以当天课表为准</b>——
+    下午上课前用上面的实时课表再核对一次。
+  </div>
+  <table>
+    <tr>
+      <th style="width:92px;">时间</th><th style="width:170px;">课程</th>
+      <th style="width:86px;">语言门槛</th><th>说明</th>
+    </tr>
+    <tr class="rec">
+      <td>13:15–14:15</td>
+      <td><b>声音浴冥想</b><br>Sound Bath Meditation</td>
+      <td>⭐ 极低</td>
+      <td>颂钵/铜锣，全程躺着。听不懂也没关系，跟声音走。<b>首选</b>。</td>
+    </tr>
+    <tr class="rec">
+      <td>15:00–16:00</td>
+      <td><b>疗愈瑜伽睡眠</b><br>Healing Yoga Nidra</td>
+      <td>⭐ 极低</td>
+      <td>深度放松引导，也是躺平。倒时差友好。<b>次选</b>。</td>
+    </tr>
+    <tr class="cau">
+      <td>17:00–19:00</td>
+      <td><b>昆达里尼 + 锣浴</b><br>Kundalini, Gong Bath</td>
+      <td>⭐⭐⭐ 中</td>
+      <td>前半段昆达里尼有唱诵和口令，可能跟不上；<b>后半段锣浴躺着听，很值</b>。</td>
+    </tr>
+    <tr class="avoid">
+      <td>14:00–16:30</td>
+      <td>【特级】极乐之息<br>Breath of Bliss</td>
+      <td>⭐⭐⭐⭐ 高</td>
+      <td>呼吸工作坊，老师会不断给节奏口令 + 安全提示。语言不通有风险，<b>建议放弃</b>。</td>
+    </tr>
+  </table>
+
+  <h3>时间冲突</h3>
+  <ul>
+    <li>声音浴 13:15–14:15 → 接得上 15:00 瑜伽睡眠 ✅</li>
+    <li>瑜伽睡眠 15:00–16:00 → 接得上 17:00 昆达里尼/锣浴 ✅</li>
+    <li>极乐之息 14:00–16:30 占满下午 → <b>会盖掉后两节</b>，别选</li>
+  </ul>
+
+  <h3>推荐组合</h3>
+  <ul>
+    <li><b>方案 A（最稳）</b>：13:15 声音浴 + 15:00 瑜伽睡眠 —— 两节全躺，零英语压力，落地当天最舒服</li>
+    <li><b>方案 B（丰富）</b>：13:15 声音浴 + 17:00 昆达里尼/锣浴 —— 先放松再体验锣浴高潮</li>
+    <li><b>方案 C（少上）</b>：只上 15:00 瑜伽睡眠 <b>或</b> 17:00 锣浴 —— 落地太累就选这个</li>
+  </ul>
+
+  <div class="tip">
+    <b>当天怎么选</b>：落地累 → 只上 13:15 声音浴；精力够 → 声音浴 + 瑜伽睡眠，或瑜伽睡眠 + 锣浴。
+  </div>
+</div>
+
+<div class="card">
+  <h2>🔗 相关链接</h2>
+  <p style="margin:0 0 12px;">
+    <a class="btn" href="https://theyogabarn.com/classes/daily-classes/" target="_blank" rel="noopener">官网原版课表 ↗</a>
+    &nbsp;
+    <a class="btn alt" href="https://theyogabarn.com/about/#venue-map" target="_blank" rel="noopener">场地地图 ↗</a>
+    &nbsp;
+    <a class="btn alt" href="https://maps.google.com/?q=The+Yoga+Barn+Ubud" target="_blank" rel="noopener">Google 导航 ↗</a>
+  </p>
+  <p class="note">
+    Yoga Barn 地址：Jl. Raya Pengosekan, Ubud, Gianyar, Bali ·
+    电话 +62 361 971407
+  </p>
+</div>
+
+<footer>
+  数据源：Yoga Barn 官方 Mindbody 课表系统（widget 762224627fc4）· 实时更新<br>
+  中文对照与建议由本页整理，仅供出行参考
+</footer>
+
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/iframe-resizer/4.3.7/iframeResizer.min.js"></script>
+<script>
+(function(){
+  // iframe 自动等高（失败也不影响显示，iframe 自身有 min-height）
+  function tryResize(){
+    if (typeof iFrameResize === 'function') {
+      try { iFrameResize({ log:false, checkOrigin:false, heightCalculationMethod:'bodyOffset' }, '#ybFrame'); } catch(e){}
+    } else {
+      setTimeout(tryResize, 400);
+    }
+  }
+  tryResize();
+  // 兜底：若 3 秒后 iframe 仍空白，提示用户走官网链接
+  setTimeout(function(){
+    var f = document.getElementById('ybFrame');
+    if (f && f.contentWindow) {
+      try { if (f.contentWindow.document.body && f.contentWindow.document.body.innerHTML.trim().length < 50) f.style.minHeight = '300px'; } catch(e){}
+    }
+  }, 3500);
+})();
+</script>
+</body>
+</html>
