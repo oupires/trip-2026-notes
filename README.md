@@ -13,6 +13,7 @@
 | **行程小助手**（推荐） | [`index.html`](index.html) | 倒计时 + 实时天气 + 可导航地图 + 每日流程 + 紧急电话 + 航班/入境/餐食/清单速查 |
 | 完整攻略 | [`guide.html`](guide.html) | 住宿、餐食、SPA、入境手续、携带物品与药品清单的完整版 |
 | 自订速查卡 | [`self-booking.html`](self-booking.html) | Yoga Barn / Udara 等需自己预订的项目 |
+| **Yoga Barn 中文课表** | [`yogabarn-cn.html`](yogabarn-cn.html) | 官方实时课表（打开即显示当天）+ 中英课程对照表 + 9/26 周六选课建议 |
 
 `index.html` 是**单文件自包含**的——Leaflet 地图引擎已内联，**断网也能正常打开**（底图会灰掉，但节点、动线、倒计时、流程全部可用）。
 
