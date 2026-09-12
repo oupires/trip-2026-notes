@@ -2,7 +2,7 @@
 
 2026 年 9 月 25 日 – 10 月 4 日，巴厘岛 9 天 7 晚双人行程的随身页面。
 
-**在线访问：** `https://<你的用户名>.github.io/bali-trip/`
+**在线访问：** https://oupires.github.io/bali-travel-handbook/
 
 ---
 
@@ -82,4 +82,11 @@ python -m http.server 8080
 
 ## 隐私
 
-本仓库包含个人行程信息（住宿、航班、日期）。若需公开访问，建议在仓库 Settings → General → Danger Zone 中确认可见性；或改用私有仓库 + 仅自己可见的部署方式。
+本仓库为**公开仓库**——GitHub Pages 在免费账号下只能从公开仓库发布，这是换取「永久在线链接」的代价。
+
+仓库内容包含个人行程信息（住宿、航班、日期）。已做的**防收录**措施：
+
+- 三个页面都加了 `<meta name="robots" content="noindex,nofollow,noarchive">`
+- 根目录 `robots.txt` 全站禁止抓取
+
+⚠️ **这只能防止被搜索引擎收录，拿到链接的人仍可直接访问。** 请不要把链接发到公开场合或社交平台。
